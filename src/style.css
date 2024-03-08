@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+
+
+:root {
+  --very-dark-blue: hsl(217, 54%, 11%);
+  --very-blue: hsl(216, 50%, 16%);
+  --blue-dark: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+  --cyan: hsl(178, 100%, 50%);
+  --soft-blue: hsl(215, 51%, 70%);
+  
+}
+
+body {
+  min-height: 100vh;
+  color: var(--blue-dark);
+  background: var(--very-dark-blue);
+  font-size: 1rem;
+  font-weight: 300;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  max-width: 320px;
+  background:var(--very-blue);
+  padding: 1.5rem;
+  padding-bottom: 0.5rem;
+  margin: 1.5rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 1.5rem 1.5rem 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-img{
+  display: block;
+  position: relative;
+}
+
+.card-img .equilibrium{
+  width: 100%;
+  height: 100%;
+  border-radius: 0.5rem;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.eye-img{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.eye-img  .view{
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+.card-img:hover .eye-img{
+  background : #64e0e0;
+  opacity: 0.7;
+}
+
+.eye-img:hover .view{
+  opacity: 1;
+}
+
+
+.card-title{
+  text-decoration: none;
+}
+.card-title h1{
+  color: var(--white);
+  cursor: pointer;
+  font-size: 1.5rem;
+  margin: 0.8rem 0;
+}
+.card-p{
+ color:var(--soft-blue) ;
+}
+
+h1:hover{
+  color:  #64e0e0;
+}
+
+.eth-price{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.eth-price-left, .eth-price-right{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.eth-price span{
+  color: #64e0e0;
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+hr{
+  display: block;
+  border: none;
+  height: 1px;
+  background: var(--blue-dark);
+}
+
+.nft-creator{
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin: 1rem 0;
+}
+
+.nft-creator img{
+  max-width: 2rem;
+  border: 1px solid var(--white);
+  border-radius: 50%;
+}
+
+.nft-creator p a{
+  text-decoration: none;
+  font-weight: 400;
+  color: var(--white);
+}
+.nft-creator p{
+  color: var(--soft-blue);
+}
+.nft-creator p a:hover{
+  color:#64e0e0 ;
+}
