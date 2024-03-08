@@ -13,7 +13,7 @@ Here is the link of the challange- https://www.frontendmentor.io/challenges/nft-
 ### Links
 
 - Solution URL:(https://github.com/ysmltr/nft-preview-card-component-main)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: (https://nft-preview-card-component-main-tpdc.vercel.app)
 
 ## My process
 
